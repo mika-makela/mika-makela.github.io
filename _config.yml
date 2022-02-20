@@ -4,6 +4,9 @@ author: mikam
 
 theme: minima
 
+minima:
+  skin: dark
+
 show_excerpts: true
 
 header_pages:
