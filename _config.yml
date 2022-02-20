@@ -1,3 +1,19 @@
-theme: jekyll-theme-minimal
 title: mikam.info
-comment: A jack of all trades is a master of none, but oftentimes better than a master of one.
+description: A jack of all trades is a master of none, but oftentimes better than a master of one.
+author: "Mika Mäkelä"
+
+theme: jekyll-theme-minimal
+
+github_username: mika-makela
+linkedin_username: makela-mika
+rss: rss
+
+show_excerpts: true
+
+header_pages:
+  - _pages/frontpage.md
+  - _pages/about.md
+  - _pages/archive.md
+
+include:
+    - _pages
