@@ -6,6 +6,7 @@ theme: minima
 
 minima:
   skin: dark
+  date_format: "%Y-%m-%d"
 
 show_excerpts: true
 
