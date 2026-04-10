@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "lastUpdated": "2026-04-10"
+  },
+  "basics": {
+    "name": "Mika Mäkelä",
+    "headline": "Cloud Architect",
+    "email": "bWlrYW1AbWlrYW0uaW5mbw==",
+    "phone": "KzM1OCA1MCAzNzYgMjQ2Ng==",
+    "location": "Hämeenlinna, Finland",
+    "website": "https://mikam.info",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "avatar": "https://avatars.githubusercontent.com/mika-makela",
+    "social": [
+      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/makela-mika/" },
+      { "network": "GitHub", "url": "https://github.com/mika-makela" }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Lorem Ipsum Ltd",
+      "role": "Lorem Ipsum Dolor",
+      "location": "Lorem, Finland",
+      "startDate": "2022-03",
+      "endDate": null,
+      "current": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "highlights": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+        "Duis aute irure dolor in reprehenderit in voluptate velit"
+      ]
+    },
+    {
+      "company": "Dolor Sit Amet",
+      "role": "Consectetur Adipiscing",
+      "location": "Ipsum, Estonia",
+      "startDate": "2019-06",
+      "endDate": "2022-02",
+      "current": false,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
+      "highlights": [
+        "Excepteur sint occaecat cupidatat non proident",
+        "Sunt in culpa qui officia deserunt mollit anim id est laborum"
+      ]
+    },
+    {
+      "company": "Adipiscing Elit",
+      "role": "Sed Do Eiusmod",
+      "location": "Remote",
+      "startDate": "2017-09",
+      "endDate": "2019-05",
+      "current": false,
+      "description": "Ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "highlights": []
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Lorem Ipsum Professional",
+      "issuer": "Lorem Corp",
+      "issued": "2024-06",
+      "expires": "2027-06",
+      "credentialId": "LOREM-12345",
+      "credentialUrl": "https://example.com/verify/lorem"
+    },
+    {
+      "name": "Dolor Sit Amet Associate",
+      "issuer": "Ipsum Institute",
+      "issued": "2023-03",
+      "expires": "2026-03",
+      "credentialId": "DOLOR-67890",
+      "credentialUrl": "https://example.com/verify/dolor"
+    },
+    {
+      "name": "Consectetur Adipiscing Expert",
+      "issuer": "Amet Academy",
+      "issued": "2022-11",
+      "expires": null,
+      "credentialId": "CONS-11223",
+      "credentialUrl": "https://example.com/verify/consectetur"
+    }
+  ],
+  "projects": [
+    {
+      "name": "mika-makela.github.io",
+      "description": "Personal CV site built with Nuxt 3, Vue 3, and Tailwind CSS. Features dark/light mode, QR contact card, scroll animations, and full SEO/GEO optimisation including Schema.org structured data and llms.txt.",
+      "url": "https://mika-makela.github.io",
+      "repo": "https://github.com/mika-makela/mika-makela.github.io",
+      "tech": ["Nuxt 3", "Vue 3", "Tailwind CSS", "TypeScript", "GitHub Actions"],
+      "pinned": true
+    },
+    {
+      "name": "Lorem Ipsum Project",
+      "description": "Dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.",
+      "url": null,
+      "repo": "https://github.com/mika-makela/lorem-ipsum",
+      "tech": ["Lorem", "Ipsum", "Dolor"],
+      "pinned": false
+    },
+    {
+      "name": "Consectetur Adipiscing",
+      "description": "Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.",
+      "url": "https://example.com",
+      "repo": null,
+      "tech": ["Sit", "Amet", "Consectetur", "Adipiscing"],
+      "pinned": false
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lorem Ipsum University",
+      "degree": "Master of Science",
+      "field": "Lorem Ipsum",
+      "startDate": "2015-09",
+      "endDate": "2017-06",
+      "grade": "Lorem Distinction",
+      "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    {
+      "institution": "Dolor Sit Amet College",
+      "degree": "Bachelor of Science",
+      "field": "Consectetur Adipiscing",
+      "startDate": "2012-09",
+      "endDate": "2015-06",
+      "grade": null,
+      "notes": null
+    }
+  ],
+  "languages": [
+    { "language": "Finnish", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Fluent" }
+  ],
+  "skills": [
+    {
+      "category": "Lorem Ipsum",
+      "items": ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"]
+    },
+    {
+      "category": "Dolor Sit",
+      "items": ["Adipiscing", "Elit", "Sed Do", "Eiusmod", "Tempor", "Incididunt", "Labore"]
+    },
+    {
+      "category": "Amet Consectetur",
+      "items": ["Ut Labore", "Dolore Magna", "Aliqua", "Enim Minim", "Veniam", "Nostrud"]
+    },
+    {
+      "category": "Adipiscing Elit",
+      "items": ["Exercitation", "Ullamco", "Laboris", "Commodo Consequat"]
+    }
+  ]
+}

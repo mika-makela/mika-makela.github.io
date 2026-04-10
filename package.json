@@ -1,0 +1,17 @@
+{
+  "name": "mika-makela-cv",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "update-date": "node scripts/update-date.js"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@types/qrcode": "^1.5.5",
+    "nuxt": "^3.11.0",
+    "qrcode": "^1.5.4"
+  }
+}
