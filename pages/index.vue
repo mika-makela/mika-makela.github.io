@@ -169,6 +169,7 @@ const sections = [
   { id: 'certifications', label: 'Certifications' },
   { id: 'projects', label: 'Projects' },
   { id: 'education', label: 'Education' },
+  { id: 'languages', label: 'Languages' },
   { id: 'skills', label: 'Skills' },
 ]
 
@@ -193,7 +194,9 @@ useHead({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: avatar },
-    { property: 'canonical', content: SITE_URL },
+  ],
+  link: [
+    { rel: 'canonical', href: SITE_URL },
   ],
   script: cv.value ? [{
     type: 'application/ld+json',

@@ -1,5 +1,5 @@
 export const useTheme = () => {
-  const isDark = ref(true)
+  const isDark = useState('isDark', () => true)
 
   const apply = (dark: boolean) => {
     document.documentElement.classList.toggle('light', !dark)

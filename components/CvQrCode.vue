@@ -58,7 +58,9 @@ const hovered = ref(false)
 const buildVCard = (basics: Basics): string => {
   const email = atob(basics.email)
   const phone = atob(basics.phone)
-  const [last, first] = basics.name.split(' ').reverse()
+  const parts = basics.name.split(' ')
+  const last = parts.at(-1) ?? ''
+  const first = parts.slice(0, -1).join(' ')
   return [
     'BEGIN:VCARD',
     'VERSION:3.0',
