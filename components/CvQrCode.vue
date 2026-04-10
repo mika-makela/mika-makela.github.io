@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <div
-      class="fixed bottom-6 left-6 z-50 group flex flex-col items-start gap-2"
+      class="group flex flex-col items-end gap-2"
       role="complementary"
       aria-label="Contact QR code"
     >
