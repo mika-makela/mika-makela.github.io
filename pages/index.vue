@@ -121,7 +121,7 @@
     </div>
 
     <!-- Floating widgets (no-print) -->
-    <div class="no-print">
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 no-print">
       <CvQrCode v-if="cv" :basics="cv.basics" />
 
       <Transition
@@ -135,7 +135,7 @@
         <button
           v-if="showTop"
           @click="scrollToTop"
-          class="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-surface border border-gray-700 hover:border-accent/60 hover:bg-gray-800 flex items-center justify-center shadow-lg shadow-black/40 transition-colors duration-200"
+          class="w-11 h-11 rounded-full bg-surface border border-gray-700 hover:border-accent/60 hover:bg-gray-800 flex items-center justify-center shadow-lg shadow-black/40 transition-colors duration-200"
           aria-label="Back to top"
         >
           <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,6 +169,7 @@ const sections = [
   { id: 'certifications', label: 'Certifications' },
   { id: 'projects', label: 'Projects' },
   { id: 'education', label: 'Education' },
+  { id: 'languages', label: 'Languages' },
   { id: 'skills', label: 'Skills' },
 ]
 
@@ -193,7 +194,9 @@ useHead({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: avatar },
-    { property: 'canonical', content: SITE_URL },
+  ],
+  link: [
+    { rel: 'canonical', href: SITE_URL },
   ],
   script: cv.value ? [{
     type: 'application/ld+json',

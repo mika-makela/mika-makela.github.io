@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <div
-      class="fixed bottom-6 left-6 z-50 group flex flex-col items-start gap-2"
+      class="group flex flex-col items-end gap-2"
       role="complementary"
       aria-label="Contact QR code"
     >
@@ -58,7 +58,9 @@ const hovered = ref(false)
 const buildVCard = (basics: Basics): string => {
   const email = atob(basics.email)
   const phone = atob(basics.phone)
-  const [last, first] = basics.name.split(' ').reverse()
+  const parts = basics.name.split(' ')
+  const last = parts.at(-1) ?? ''
+  const first = parts.slice(0, -1).join(' ')
   return [
     'BEGIN:VCARD',
     'VERSION:3.0',
