@@ -173,7 +173,7 @@ const sections = [
   { id: 'skills', label: 'Skills' },
 ]
 
-const SITE_URL = 'https://mika-makela.github.io'
+const SITE_URL = 'https://mikam.info'
 const decodeB64 = (b64: string) => { try { return atob(b64) } catch { return '' } }
 const title = cv.value ? `${cv.value.basics.name} — ${cv.value.basics.headline}` : 'CV'
 const description = cv.value?.basics.summary ?? ''

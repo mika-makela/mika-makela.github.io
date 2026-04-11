@@ -32,4 +32,4 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://mika-makela.github.io/sitemap.xml
+Sitemap: https://mikam.info/sitemap.xml

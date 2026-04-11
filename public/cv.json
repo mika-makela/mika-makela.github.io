@@ -83,9 +83,9 @@
   ],
   "projects": [
     {
-      "name": "mika-makela.github.io",
+      "name": "mikam.info",
       "description": "Personal CV site built with Nuxt 3, Vue 3, and Tailwind CSS. Features dark/light mode, QR contact card, scroll animations, and full SEO/GEO optimisation including Schema.org structured data and llms.txt.",
-      "url": "https://mika-makela.github.io",
+      "url": "https://mikam.info",
       "repo": "https://github.com/mika-makela/mika-makela.github.io",
       "tech": ["Nuxt 3", "Vue 3", "Tailwind CSS", "TypeScript", "GitHub Actions"],
       "pinned": true
