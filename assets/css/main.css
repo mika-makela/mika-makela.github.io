@@ -100,6 +100,12 @@ html.light .shadow-black\/50          { --tw-shadow-color: rgba(0,0,0,0.12); }
 
   /* Force page break before major sections */
   #experience, #education { break-before: auto; }
+
+  /* Ensure scroll-reveal elements are fully visible */
+  .reveal, .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 /* ── Scroll reveal ──────────────────────────────────────────────── */
