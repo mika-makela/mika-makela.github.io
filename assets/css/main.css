@@ -41,21 +41,22 @@
 }
 
 /* ── Light mode overrides ───────────────────────────────────────── */
-html.light body                        { @apply bg-gray-50 text-gray-900; }
+html.light body                        { background-color: #dde1e7; color: #111827; }
 html.light ::selection                 { @apply bg-accent/20 text-gray-900; }
-html.light ::-webkit-scrollbar-track  { @apply bg-gray-100; }
-html.light ::-webkit-scrollbar-thumb  { @apply bg-gray-300; }
+html.light ::-webkit-scrollbar-track  { background-color: #cdd1d8; }
+html.light ::-webkit-scrollbar-thumb  { background-color: #a0a8b4; border-radius: 9999px; }
 
-html.light .section-heading::after    { @apply bg-gray-200; }
-html.light .card                      { @apply bg-white border-gray-200 hover:border-gray-300; }
-html.light .tag                       { @apply bg-gray-100 text-gray-700 border-gray-200; }
+html.light .section-heading::after    { background-color: #b0b7c3; }
+html.light .card                      { background-color: #e8ecf1; border-color: #c5cad3; }
+html.light .card:hover                { border-color: #a8aebb; }
+html.light .tag                       { background-color: #d4d9e2; color: #374151; border-color: #b8bec9; }
 
-html.light .bg-gray-950               { background-color: #f9fafb; }
-html.light .bg-gray-950\/80           { background-color: rgba(249,250,251,0.85); }
-html.light .bg-gray-950\/95           { background-color: rgba(249,250,251,0.97); }
-html.light .bg-surface                { background-color: #ffffff; }
-html.light .bg-gray-800               { background-color: #f3f4f6; }
-html.light .bg-gray-800\/40           { background-color: rgba(243,244,246,0.6); }
+html.light .bg-gray-950               { background-color: #dde1e7; }
+html.light .bg-gray-950\/80           { background-color: rgba(221,225,231,0.85); }
+html.light .bg-gray-950\/95           { background-color: rgba(221,225,231,0.97); }
+html.light .bg-surface                { background-color: #e8ecf1; }
+html.light .bg-gray-800               { background-color: #d4d9e2; }
+html.light .bg-gray-800\/40           { background-color: rgba(212,217,226,0.6); }
 
 html.light .text-white                { color: #111827; }
 html.light .text-gray-100             { color: #111827; }
@@ -64,10 +65,10 @@ html.light .text-gray-400             { color: #6b7280; }
 html.light .text-gray-500             { color: #9ca3af; }
 html.light .text-gray-600             { color: #9ca3af; }
 
-html.light .border-gray-800           { border-color: #e5e7eb; }
-html.light .border-gray-800\/60       { border-color: rgba(229,231,235,0.6); }
-html.light .border-gray-800\/40       { border-color: rgba(229,231,235,0.4); }
-html.light .border-gray-700           { border-color: #d1d5db; }
+html.light .border-gray-800           { border-color: #c5cad3; }
+html.light .border-gray-800\/60       { border-color: rgba(197,202,211,0.6); }
+html.light .border-gray-800\/40       { border-color: rgba(197,202,211,0.4); }
+html.light .border-gray-700           { border-color: #a8aebb; }
 
 html.light .ring-accent\/40           { --tw-ring-color: rgba(16,185,129,0.3); }
 html.light .shadow-black\/40          { --tw-shadow-color: rgba(0,0,0,0.1); }
