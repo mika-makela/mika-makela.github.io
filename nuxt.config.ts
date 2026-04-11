@@ -23,5 +23,11 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    prerender: {
+      routes: ['/llms.txt', '/sitemap.xml', '/api/cv'],
+    },
+  },
+
   compatibilityDate: '2024-04-03',
 })
