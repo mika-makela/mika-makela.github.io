@@ -6,7 +6,7 @@
         <!-- Desktop links -->
         <div class="hidden sm:flex gap-5 text-xs font-medium text-gray-400">
           <a v-for="section in sections" :key="section.id" :href="`#${section.id}`"
-            class="hover:text-accent transition-colors capitalize">
+            :class="['transition-colors capitalize', activeSection === section.id ? 'text-accent' : 'hover:text-accent']">
             {{ section.label }}
           </a>
         </div>
@@ -59,7 +59,7 @@
             v-for="section in sections"
             :key="section.id"
             :href="`#${section.id}`"
-            class="block px-5 py-3 text-sm text-gray-400 hover:text-accent hover:bg-gray-800/40 transition-colors capitalize border-b border-gray-800/40 last:border-0"
+            :class="['block px-5 py-3 text-sm hover:bg-gray-800/40 transition-colors capitalize border-b border-gray-800/40 last:border-0', activeSection === section.id ? 'text-accent' : 'text-gray-400 hover:text-accent']"
             @click="menuOpen = false"
           >
             {{ section.label }}
@@ -123,6 +123,7 @@
     <!-- Floating widgets (no-print) -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 no-print">
       <CvQrCode v-if="cv" :basics="cv.basics" />
+      <CvSaveContact v-if="cv" :basics="cv.basics" />
 
       <Transition
         enter-active-class="transition-all duration-200 ease-out"
@@ -154,13 +155,25 @@ const { data: cv, pending, error } = await useCv()
 
 const menuOpen = ref(false)
 const showTop = ref(false)
+const activeSection = ref('')
+
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 const print = () => window.print()
 
 onMounted(() => {
-  window.addEventListener('scroll', () => {
+
+  const onScroll = () => {
     showTop.value = window.scrollY > 300
-  })
+
+    const sectionEls = sections
+      .map(s => document.getElementById(s.id))
+      .filter(Boolean) as HTMLElement[]
+
+    const current = sectionEls.findLast(el => el.getBoundingClientRect().top <= 80)
+    activeSection.value = current?.id ?? ''
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true })
 })
 
 const sections = [
