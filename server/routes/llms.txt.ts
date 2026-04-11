@@ -5,8 +5,6 @@ export default defineEventHandler((event) => {
   setResponseHeader(event, 'Content-Type', 'text/plain; charset=utf-8')
 
   const cv = JSON.parse(readFileSync(join(process.cwd(), 'public', 'cv.json'), 'utf-8'))
-  const decode = (b64: string) => Buffer.from(b64, 'base64').toString('utf-8')
-
   const experience = cv.experience.map((e: any) => [
     `### ${e.role} — ${e.company} (${e.location})`,
     `${e.startDate} to ${e.current ? 'Present' : e.endDate}`,
@@ -40,8 +38,6 @@ export default defineEventHandler((event) => {
     '',
     '## Contact',
     '',
-    `- Email: ${decode(cv.basics.email)}`,
-    `- Phone: ${decode(cv.basics.phone)}`,
     `- Website: ${cv.basics.website}`,
     social,
     '',
