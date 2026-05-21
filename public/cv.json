@@ -4,12 +4,12 @@
   },
   "basics": {
     "name": "Mika Mäkelä",
-    "headline": "Cloud Architect",
+    "headline": "IT generalist",
     "email": "bWlrYW1AbWlrYW0uaW5mbw==",
     "phone": "KzM1OCA1MCAzNzYgMjQ2Ng==",
     "location": "Hämeenlinna, Finland",
     "website": "https://mikam.info",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "summary": "I'm a technically versatile person, with a strong focus on cloud infrastructure and DevOps. Outside of infrastructure work, I'm deeply into the maker side of technology: 3D modelling and printing, microcontrollers (currently tinkering with ESP32 based boards), home automation (Home Assistant), networking (Unifi). Currently exploring generative AI and how it can be used to augment my work and hobbies.",
     "avatar": "https://avatars.githubusercontent.com/mika-makela",
     "social": [
       { "network": "LinkedIn", "url": "https://www.linkedin.com/in/makela-mika/" },
